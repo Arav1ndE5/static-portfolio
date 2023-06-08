@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dino Game</h1>
+            <canvas id="game" height="200" width="800"></canvas>
+            <p class="controls">press SPACE to play this classic if you are free!</p>
+        
+                <script src="game/helpers.js"></script>
+                <script src="game/game-object.js"></script>
+                <script src="game/cactus.js"></script>
+                <script src="game/dinosaur.js"></script>
+                <script src="game/background.js"></script>
+                <script src="game/score.js"></script>
+                <script src="game/game.js"></script>
+                <script>
+                  new Game({
+                    el: document.getElementById("game")
+                  });
+                </script>
+
+
+</body>
+</html>
