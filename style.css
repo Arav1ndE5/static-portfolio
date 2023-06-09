@@ -21,6 +21,8 @@ body {
   font-size: 18px;
   font-weight: 100;
   padding: 5px;
+  float: right;
+  display: flex;
 }
 
 .small-text {
@@ -215,6 +217,7 @@ b, strong {
 
 .navbar-expand-sm .navbar-nav .nav-link {
   padding: 0 20px;
+
 }
 
 .nav-link {
@@ -297,27 +300,36 @@ b, strong {
 .color-mode-icon {
   position: relative;
   right: 6px;
+  padding-left: 1em;
 }
 .color-mode-icon:after {
   font-family: 'unicons';
-  content: '\ea9f';
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
+    content: '\ea9f';
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(58, 58, 58);
 }
 .color-mode-icon.active:after {
   font-family: 'unicons';
   content: '\eb65';
-  font-size: 30px;
+  font-size: 1em;
   color: #ffffff;
+  
 }
 
 .dark-mode {
   background: #0c0c0d;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(108, 107, 107, 0.8);
+  background: #0c0c0d;
 }
+.dark-mode .navbar-expand-sm{
+  background: #0c0c0d;
+  color: rgba(108, 107, 107, 0.8);
+}
+
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #ffc200;
 }

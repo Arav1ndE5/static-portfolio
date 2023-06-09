@@ -9,11 +9,11 @@
         var sw=$('#jedi').text();
         if (sw=="Dark side?"){
           $('#jedi').text("Light side!");
-          $('.rounded').attr('src','images/Black.jpg');
+          $('.rounded').attr('src','images/black.jpg');
         }
         else{
           $('#jedi').text("Dark side?");
-          $('.rounded').attr('src','images/White.jpg');
+          $('.rounded').attr('src','images/white.jpg');
         }
         
     })
@@ -65,3 +65,6 @@
     $('.social-links a').tooltip();
 
 })(jQuery);
+
+
+const getPreferredScheme = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ? 'dark' : 'light';
