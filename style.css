@@ -36,6 +36,7 @@ body {
 .rounded{
   width: 100%;
   padding: 1em;
+  padding-top: 10em;
 }
 
 ul {
@@ -54,6 +55,124 @@ a {
 a:hover {
   color: #ffc200 !important;
 }
+/*Animation*/
+
+.loop-wrapper {
+  margin-top: 0px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5em;
+  overflow: hidden;
+  border-bottom: 3px solid #3b3737;
+  color: #ee7777;
+}
+.mountain {
+  position: absolute;
+  right: -900px;
+  bottom: -20px;
+  width: 2px;
+  height: 2px;
+  box-shadow: 
+    0 0 0 50px rgb(55, 85, 183),
+    60px 50px 0 70px rgb(67, 131, 103),
+    90px 90px 0 50px rgb(135, 173, 222),
+    250px 250px 0 50px rgb(44, 75, 148),
+    290px 320px 0 50px rgb(13, 70, 71),
+    320px 400px 0 50px rgb(36, 16, 102)
+    ;
+  transform: rotate(130deg);
+  animation: mtn 20s linear infinite;
+}
+
+.tree, .tree:nth-child(2), .tree:nth-child(3) {
+  position: absolute;
+  height: 100%; 
+  width: 100%;
+  bottom: 0;
+  background: url(images/icons8-tree-96.png) no-repeat;
+}
+
+.truck{
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 50%;
+  position: absolute;
+  background: #252525;
+}
+.truck {
+  background: url(images/icons8-car-100.png) no-repeat;
+  background-size: contain;
+  height: 80px;
+  margin-bottom: -18px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #6b6868,
+     -35px 18px 0 1.5px #444444;
+}
+
+
+.tree  { animation: tree 3s 0.000s linear infinite; }
+.tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+.tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+.rock  { animation: rock 4s   -0.530s linear infinite; }
+.truck  { animation: truck 4s   0.080s ease infinite; }
+.wheels  { animation: truck 4s   0.001s ease infinite; }
+.truck:before { animation: wind 1.5s   0.000s ease infinite; }
+
+
+@keyframes tree {
+  0%   { transform: translate(1350px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree2 {
+  0%   { transform: translate(650px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree3 {
+  0%   { transform: translate(2750px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+
+@keyframes rock {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+@keyframes truck {
+  0%   { }
+  6%   { transform: translateY(0px); }
+  7%   { transform: translateY(-6px); }
+  9%   { transform: translateY(0px); }
+  10%   { transform: translateY(-1px); }
+  11%   { transform: translateY(0px); }
+  100%   { }
+}
+@keyframes wind {
+  0%   {  }
+  50%   { transform: translateY(3px) }
+  100%   { }
+}
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
+  }
+}
+@keyframes hill {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+
 
 .navbar-brand .uil {
   font-size: 40px;
