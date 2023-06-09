@@ -228,7 +228,7 @@ b, strong {
 .nav-link span {
   position: relative;
   display: inline-block;
-  transition: transform 0.3s;
+  transition: transform 0s;
 }
 .nav-link span:before {
   position: absolute;
@@ -314,7 +314,7 @@ b, strong {
   font-family: 'unicons';
   content: '\eb65';
   font-size: 1em;
-  color: #ffffff;
+  color: #5f5f5f;
   
 }
 
@@ -545,6 +545,11 @@ b, strong {
 
   .navbar-collapse {
     background: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .dark-mode .navbar-collapse {
+    background: #0c0c0d;
     text-align: center;
     padding-bottom: 20px;
   }

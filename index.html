@@ -51,7 +51,7 @@
                     <div class="ml-lg-4">
                       <div class="color-mode d-lg-flex justify-content-center align-items-center">
                         <i class="color-mode-icon"></i>
-                        <h5 id="jedi">Dark side?</h5> 
+                        <!--h5 id="jedi"></h5--> 
                        </div>
                     </div>
                 </ul>
@@ -62,7 +62,7 @@
     <!-- ABOUT -->
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" >
         <div class="container-fluid">
-            <!--audio id="bgm" src="audio/Past Lives (8D Audio).mp3" autoplay="True" loop="True"></audio-->
+            <audio id="bgm" src="assets/audio/bgm.mp3" autoplay="True" loop="True"></audio>
           
             <div class="row">
                 
@@ -297,6 +297,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="script.js"></script>
+    <script>
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const newColorScheme = event.matches ? "dark" : "light";
+});
+    </script>
 
   </body>
 </html>

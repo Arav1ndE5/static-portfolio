@@ -6,14 +6,11 @@
     $('.color-mode').click(function(){
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
-        var sw=$('#jedi').text();
-        if (sw=="Dark side?"){
-          $('#jedi').text("Light side!");
-          $('.rounded').attr('src','images/black.jpg');
-        }
-        else{
-          $('#jedi').text("Dark side?");
-          $('.rounded').attr('src','images/white.jpg');
+        
+        if ($('.navbar-nav').css('background-color') === '#0c0c0d') {
+          $('.rounded').attr('src', 'images/black.jpg');
+        } else {
+          $('.rounded').attr('src', 'images/white.jpg');
         }
         
     })
@@ -67,4 +64,4 @@
 })(jQuery);
 
 
-const getPreferredScheme = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ? 'dark' : 'light';
+
