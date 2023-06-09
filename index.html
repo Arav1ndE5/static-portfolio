@@ -21,7 +21,7 @@
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
-            <div><i id="mute" class="fa fa-volume-off"></i></i></i><a class="navbar-brand" href="game/dinogame.html"></i> Arav1nd</a></div>
+            <div><i id="mute" class="fa fa-volume-off"><span data-hover="Sound"></span></i></i><a class="navbar-brand" href="game/dinogame.html"></i> Arav1nd</a></div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
                 <ul class="navbar-nav ml-lg-auto" id="dtbar">
                     <div class="ml-lg-4">
                       <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
+                        <i class="color-mode-icon" id="darki"></i>
                         <!--h5 id="jedi"></h5--> 
                        </div>
                     </div>
@@ -78,11 +78,11 @@
                                 </div>
                         </h1>
 
-                        <p id="info"></p>
+                        <p id="info">hey hey heyyy</p>
                         
                         <div class="custom-btn-group mt-4">
                           <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get in-touch</a>
+                          <a href="#cinfo" class="btn custom-btn custom-btn-bg custom-btn-link">Get in-touch</a>
                         </div>
                     </div>
                 </div>
@@ -155,8 +155,8 @@
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span> </span>
+                             <div class="timeline-sk">
+                                  <span><i class="fa fa-check-square-o"></i></span>
                              </div>
                              <div class="timeline-info">
                                   <h3><span>Web Designing</span><small>Intermediate</small></h3>
@@ -165,8 +165,8 @@
                         </div>
 
                         <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span> </span>
+                             <div class="timeline-sk">
+                                  <span><i class="fa fa-check-square-o"></i></span>
                              </div>
                              <div class="timeline-info">
                                   <h3><span>Programming</span><small>Advanced</small></h3>
@@ -175,8 +175,8 @@
                         </div>
 
                         <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span> </span>
+                            <div class="timeline-sk">
+                                <span><i class="fa fa-check-square-o"></i></span>
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Web Development</span><small>Novice</small></h3>
@@ -230,7 +230,7 @@
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62487.87336027022!2d75.92675658410383!3d11.800769337218416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5debb29719473%3A0xba8b930fb984f81b!2sMananthavady%2C%20Kerala!5e0!3m2!1sen!2sin!4v1686126984493!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
             <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
+                <div class="contact-info-item" id="cinfo">
                   <h3 class="mb-4 text-warning" style="padding-bottom: 1em">Say hello !</h3>
                   <p><a class="footer-text mb-0" href="tel:+919496915905">9496-915-905</a></p>
                   <p><a href="mailto:mail4aravindes@gmail.com">mail4aravindes@gmail.com</a></p>
@@ -297,11 +297,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="script.js"></script>
-    <script>
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    const newColorScheme = event.matches ? "dark" : "light";
-});
-    </script>
 
   </body>
 </html>

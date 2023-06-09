@@ -6,12 +6,12 @@
     $('.color-mode').click(function(){
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
-        
-        if ($('.navbar-nav').css('background-color') === '#0c0c0d') {
+        if ($('.rounded').attr('src')=='images/white.jpg') {
           $('.rounded').attr('src', 'images/black.jpg');
-        } else {
+        }   
+        else {
           $('.rounded').attr('src', 'images/white.jpg');
-        }
+        };
         
     })
 
