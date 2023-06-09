@@ -1,2 +1,1 @@
-"# static-portfolio" 
-"# static-portfolio" 
+Static website containing personal portfolio

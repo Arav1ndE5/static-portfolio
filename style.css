@@ -500,7 +500,9 @@ b, strong {
   }
 
   .color-mode {
-    display: none;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
   }
 
   .about-image {

@@ -9,11 +9,11 @@
         var sw=$('#jedi').text();
         if (sw=="Dark side?"){
           $('#jedi').text("Light side!");
-          $('.rounded').attr('src','assets/images/Black.jpg');
+          $('.rounded').attr('src','images/Black.jpg');
         }
         else{
           $('#jedi').text("Dark side?");
-          $('.rounded').attr('src','assets/images/White.jpg');
+          $('.rounded').attr('src','images/White.jpg');
         }
         
     })
