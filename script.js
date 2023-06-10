@@ -17,24 +17,19 @@
 
     //MUTE
     $("#mute").click(function(){
-      if ($('#mute').attr('class')=="fa fa-volume-off"){
-        $('#bgm').prop('muted',toggle(false));
-        $('#mute').removeClass('fa fa-volume-off').addClass('fa fa-music');
+      if ($('#mute').attr('class')=="fa fa-user"){
+        $('#mute').removeClass('fa fa-user').addClass('fa fa-share-alt');
       }
       else{
-        $('#bgm').prop('muted',toggle(true));
-        $('#mute').removeClass('fa fa-music').addClass('fa fa-volume-off');
+        var url = window.location.href;
+        navigator.clipboard.writeText(url).then(() => {
+          alert('Website link Copied and ready to share');
+        }, (error) => {
+          console.log(error);
+        });
+        $('#mute').removeClass('fa fa-share-alt').addClass('fa fa-check-square');
       }
     })
-
-    function toggle(muted){
-      if (muted){
-        return false;
-      }
-      else{
-        return true;
-      }
-    }
 
     // HEADER
     $(".navbar").headroom();
