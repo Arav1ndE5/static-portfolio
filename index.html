@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://kit.fontawesome.com/b6ebd880c9.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="style.css" type="text/css">
     
 
   </head>
-  <body>
+  <body class="dark-mode">
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
@@ -51,7 +52,7 @@
                 <ul class="navbar-nav ml-lg-auto" id="dtbar">
                     <div class="ml-lg-4">
                       <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon" id="darki"></i>
+                        <i class="fa-solid fa-sun" id="darki"></i>
                         <!--h5 id="jedi"></h5--> 
                        </div>
                     </div>
@@ -61,46 +62,39 @@
     </nav>
 
     <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" >
-        <div class="container-fluid" display="hidden">
-          
-          <div class="loop-wrapper">
-            <div class="mountain"></div>
-            <div class="spacing"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="tree"></div>
-            <div class="taxi"></div>
-          </div>
-
-            <div class="row" id="cstrt">
-                
-                <div class="col-lg-12 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text" >
-                        <small id="intr" class="small-text">Greetings to my personal website<span class="mobile-block"></span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-6">I'm</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Aravind E S</span>
-                                    <span class="animated-item" ><span class="details">a </span> Web Designer</span>
-                                    <span class="animated-item" ><span class="details">a </span> Programmer</span>
-                                </div>
-                        </h1>
-                        <div >
-                          <p  id="info">
-                            Passionate about using technology to <span class="einfo">solve problems and make people's lives easier.</span><br>
-                            Solving problems and finding creative solutions are what I look forward to.<br>
-                            If you have any projects that you think I might be interested in, <span class="einfo">please don't hesitate to reach out.</span></p>
-                        </div>
-                        
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#cinfo" class="btn custom-btn custom-btn-bg custom-btn-link">Get in-touch</a>
-                        </div>
-                    </div>
-                </div>
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="bgg">
+        <div class="container-fluid" display="hidden" >
+          <div class="row" id="cstrt">
             </div>
+          <div class="col-lg-12 col-md-12 col-12 d-flex align-items-center" id="nameint">
+                    <div id="containerint">
+                        <span id="text1"></span>
+                        <span id="text2"></span>
+                    </div>
+                    
+                    <svg id="filters">
+                        <defs>
+                            <filter id="threshold">
+                                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                      0 1 0 0 0
+                                      0 0 1 0 0
+                                      0 0 0 255 -140" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>        
+              
+                  <p  id="info">
+                    Passionate about using technology to <span class="einfo">solve problems and make people's lives easier.</span><br>
+                    Solving problems and finding creative solutions are what I look forward to.<br>
+                    If you have any projects that you think I might be interested in, <span class="einfo">please don't hesitate to reach out.</span></p>
+                </div>
+            
+            <div class="col-lg-3 col-md-12 col-12 align-items-right">
+              <div class="custom-btn-group mt-4 mr-lg-12">
+                <a href="#cinfo" class="btn custom-btn custom-btn-bg custom-btn-link">Get in-touch</a>
+              </div>
+          </div>
         </div>
     </section>
 
@@ -134,27 +128,32 @@
                           </div>
                         </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
                       </div>
-
+                      <div id="cdwn"></div>
+                      <p  id="info">
+                        My love for designing comes from the belief that <span class="einfo">good design can make a product or service more user-friendly</span> and accessible.<br>
+                        Currently working on a few personal projects and attending classes, I'm also looking for opportunities to contribute to open source projects and learn.<br><br><br> 
+                    </div></span></p>
                   </div>
                 </div>
-                <div class="row" id="cdwn">
-                  <p  id="info">
-                    My love for designing comes from the belief that <span class="einfo">good design can make a product or service more user-friendly</span> and accessible.<br>
-                    Currently working on a few personal projects and attending classes, I'm also looking for opportunities to contribute to open source projects and learn.<br> 
-                </div></span></p>
-        </div>
+                </div>
+                
+                  
+
+                <div class="ml-lg-10">
+                  <div class="color-mode d-lg-flex-column justify-content-center align-items-center">
+                    <i id="dn" class="fa-sharp fa-solid fa-moon"></i>
+            
+                <div class="loop-wrapper mr-lg-12 sm-12">
+                  <div class="mountain"></div>
+                  <div class="space"></div>
+                  <div class="tree"></div>
+                  <div class="tree"></div>
+                  <div class="tree"></div>
+                  <div class="taxi2"></div>
+                  <div class="taxi"></div>
+                  
+                </div>
     </section>
 
     
@@ -164,74 +163,89 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Skills</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-sk">
-                                  <span><i class="fa fa-check-square-o"></i></span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Web Designing</span><small>Intermediate</small></h3>
-                                  <p>Knowledge of HTML, CSS, JavaScript, JQuery, Bootstrap and React to design front-end websites</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                             <div class="timeline-sk">
-                                  <span><i class="fa fa-check-square-o"></i></span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Programming</span><small>Advanced</small></h3>
-                                  <p>List of programming languages known include Python, Java, C, JavaScript and SQL</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-sk">
-                                <span><i class="fa fa-check-square-o"></i></span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Web Development</span><small>Novice</small></h3>
-                                <p>Learning to develop full-stack websites</p>
-                            </div>
-                        </div>
-
+                <div class="col-lg-10 col-12" style="top: -57px"; >
+                  <h2 class="mb-4 mobile-mt-2 col-lg-12">Skills</h2>
+                  <div class="skillcontainer">
+                    <div class="skills active">
+                       <!-- skill -->
+                       <div class="skill">
+                          <!-- title -->
+                          <div class="skill-title">
+                             Web Designing
+                          </div>
+                          <!-- bar -->
+                          <div class="skill-bar" data-bar="80"><span style="width: 80%;"></span></div>
+                       </div>
+                       <!-- #skill -->
+                       <!-- skill -->
+                       <div class="skill">
+                          <!-- title -->
+                          <div class="skill-title">
+                             Programming
+                          </div>
+                          <!-- bar -->
+                          <div class="skill-bar" data-bar="70"><span style="width: 70%;"></span></div>
+                       </div>
+                       <!-- #skill -->
+                       <!-- skill -->
+                       <div class="skill">
+                          <!-- title -->
+                          <div class="skill-title">
+                             Analytical skills
+                          </div>
+                          <!-- bar -->
+                          <div class="skill-bar" data-bar="90"><span style="width: 90%;"></span></div>
+                       </div>
+                       <!-- #skill -->
+                       <!-- skill -->
+                       <div class="skill">
+                          <!-- title -->
+                          <div class="skill-title">
+                             Graphic Design
+                          </div>
+                          <!-- bar -->
+                          <div class="skill-bar" data-bar="70"><span style="width: 70%;"></span></div>
+                       </div>
+                       <!-- #skill -->
+                       <!-- skill -->
+                       <div class="skill">
+                          <!-- title -->
+                          <div class="skill-title">
+                             Web Development
+                          </div>
+                          <!-- bar -->
+                          <div class="skill-bar" data-bar="60"><span style="width: 60%;"></span></div>
+                       </div>
+                       <!-- #skill -->
                     </div>
+                    </div>
+                  </div>
+
+
+                <div class="col-lg-10 col-12">
+                  <h2 class="mb-4 mobile-mt-2 col-lg-12">Educations</h2>
+
+                    <div class="edu">
+                                    <div class="tl-item active">
+                                        <div class="tl-dot b-warning"></div>
+                                        <div class="tl-content">
+                                            <div class=""><h5>Master's Degree</span><small>&#160 Cochin University</small></h5></div>
+                                            <div class="tl-date text-muted mt-1">2024</div>
+                                            <p>Currently pursuing Masters in Computer Application (MCA) from Cochin University of Science and Technology</p>
+                                        </div>
+                                    </div>
+                                    <div class="tl-item">
+                                        <div class="tl-dot b-primary"></div>
+                                        <div class="tl-content">
+                                            <div class=""><h5>Bachelor's Degree</span><small>&#160 Kannur University</small></h5></div>
+                                            <div class="tl-date text-muted mt-1">2021</div>
+                                              <p>Completed Bachelor of Science (BSc) in Physics from Kannur University with A grade certification.</p>
+                                        </div>
+                                    </div>
                 </div>
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
-                    <div class="timeline">
-                      
-                      <div class="timeline-wrapper">
-                        <div class="timeline-yr">
-                          <span>2024</span>
-                        </div>
-                        <div class="timeline-info">
-                          <h3><span>Master's Degree</span><small>Cochin University</small></h3>
-                          <p> Currently pursuing Masters in Computer Application (MCA) from Cochin University of Science and Technology</p>
-                        </div>
-                      </div>
-                      
-                      <div class="timeline-wrapper">
-                           <div class="timeline-yr">
-                                <span>2021</span>
-                           </div>
-                           <div class="timeline-info">
-                                <h3><span>Bachelor's Degree</span><small>Kannur University</small></h3>
-                                <p>Completed Bachelor of Science (BSc) in Physics from Kannur University with A grade certification.</p>
-                           </div>
-                      </div>
-
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+              </div>  
+          </div>
     </section>
 
     <!-- CONTACT -->
