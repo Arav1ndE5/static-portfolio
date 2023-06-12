@@ -599,10 +599,10 @@ b, strong {
 }
 
 .skills .skill .skill-title {
-   color: #6c6c6c;
-   margin-bottom: 10px;
-   font-weight: 400;
-   font-size: 14px;
+  color: #6c6c6c;
+  margin-bottom: 1px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .skills .skill .skill-bar {
