@@ -13,7 +13,7 @@ body {
   transition: all 0.4s ease;
 }
 #mute:hover {
-  color: rgb(9, 169, 113) !important;
+  color: rgb(0, 255, 30) !important;
 }
 
 #jedi{
@@ -55,7 +55,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: rgb(9, 169, 113) !important;
+  color: rgb(16, 255, 199) !important;
 }
 /*Animation*/
 
@@ -180,11 +180,11 @@ a:hover {
 
 #cstrt{
   padding-top: 5em;
-  background: linear-gradient(0,rgb(255, 255, 255),rgba(255, 255, 255, 0.818),rgb(255, 255, 255));
+  background:white;
 }
 .dark-mode #cstrt{
   padding-top: 5em;
-  background: linear-gradient(0,black,rgba(0, 0, 0, 0.779),black);
+  background:black;
 }
 
 /* Intro effect */
@@ -203,6 +203,7 @@ a:hover {
 }
 
 #text1,#text2 {
+  color:rgb(254, 169, 0);
   position: absolute;
   width: 100%;
   display: inline-block;
@@ -259,6 +260,11 @@ p {
   background-size: 100% 100%;
 }
 
+.phead{
+  font-size: 1.8em;
+  color: #7d7d7d;
+}
+
 .timeline-info{
   text-indent: 2em;
 }
@@ -304,9 +310,7 @@ b, strong {
   overflow: hidden;
   transition: all 0.4s ease;
 }
-.custom-btn:hover {
-  color: rgb(209, 188, 0);
-}
+
 .custom-btn.custom-btn-bg {
   background: #0e0069dc;
   color: #ffffff;
@@ -397,7 +401,7 @@ b, strong {
 .nav-link span {
   position: relative;
   display: inline-block;
-  transition: transform 1s;
+  transition: transform 0.7s;
 }
 .nav-link span:before {
   position: absolute;
@@ -408,7 +412,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(9, 169, 113);
+  color: rgb(0, 198, 233);
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -429,6 +433,9 @@ b, strong {
   outline: none;
   cursor: pointer;
   margin-right: 10px;
+}
+.navbar-toggler-icon:hover {
+  color:rgb(205, 205, 205);
 }
 .navbar-toggler:focus {
   outline: none;
@@ -454,8 +461,8 @@ b, strong {
   position: relative;
 }
  .msgme{
-  color: rgb(9, 169, 113);
-  padding-bottom: 2em;
+  color: rgb(191, 142, 255);
+  padding-bottom: 5em;
  }
 
 .copyright-text {
@@ -535,7 +542,7 @@ b, strong {
 }
 
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(9, 169, 113);
+  color: rgb(4, 236, 155);
 }
 
 .dark-mode .small-text {
@@ -874,7 +881,7 @@ tl-item.active .tl-dot:before {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: rgb(9, 169, 113);
+  color: rgb(7, 154, 246);
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -929,7 +936,9 @@ tl-item.active .tl-dot:before {
     font-weight: bold;
     font-size: 16px;
   }
-
+  #darki{
+    margin-top: 6px;
+  }
   .about-image {
     margin-top: 4em;
   }
@@ -942,6 +951,7 @@ tl-item.active .tl-dot:before {
   .contact-info {
     padding: 0 2rem;
   }
+
 }
 @media (max-width: 767px) {
   h1 {
@@ -965,7 +975,8 @@ tl-item.active .tl-dot:before {
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding: 5px 20px;
+    padding: 4.5px 20px;
+    transition: transform 0.7s
   }
 }
 @media (max-width: 580px) {

@@ -122,7 +122,7 @@ function doMorph() {
 }
 
 function setMorph(fraction) {
-  elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+  elts.text2.style.filter = `blur(${Math.min(6 / fraction - 6, 100)}px)`;
   elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
   fraction = 1 - fraction;
