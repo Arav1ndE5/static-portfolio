@@ -11,11 +11,11 @@
         else{
           $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
         }
-        if ($('#dn').attr('class')=="fa-sharp fa-solid fa-moon"){
-          $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+        if ($('#dn').attr('class')=="fa-solid fa-sun"){
+          $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
         }
         else{
-          $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+          $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
         }
         $('body').toggleClass('dark-mode')
         if ($('.rounded').attr('src')=='images/white.jpg') {

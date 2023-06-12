@@ -298,6 +298,11 @@ h3,
 b, strong {
   font-weight: bold;
 }
+.dark-mode h5 {
+  font-weight:700;
+  letter-spacing: -0.2px;
+}
+
 
 .custom-btn {
   background: #d7d7d7;
@@ -818,25 +823,6 @@ tl-item.active .tl-dot:before {
   max-width: 100px
 }
 
-.avatar {
-  position: relative;
-  line-height: 1;
-  border-radius: 500px;
-  white-space: nowrap;
-  font-weight: 700;
-  border-radius: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  border-radius: 500px;
-  box-shadow: 0 5px 10px 0 rgba(50, 50, 50, .15)
-}
-
 .b-warning {
   border-color: #f4c414!important;
 }
@@ -845,8 +831,8 @@ tl-item.active .tl-dot:before {
   border-color: #448bff!important;
 }
 
-.b-danger {
-  border-color: #f54394!important;
+.b-success {
+  border-color: #09f925!important;
 }
 
 .owl-carousel .owl-nav span {
