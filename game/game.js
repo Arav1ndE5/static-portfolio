@@ -11,25 +11,18 @@
 	var spacePressed = false;
 	function keydown(e) {
 			spacePressed = true;
+			document.getElementById("clear").innerHTML="";
     }
 
     function keyup(e) {
 			spacePressed = false;
         
     }
-	function mousedown(e) {
-			spacePressed = true;
-			
-    }
-
-    function mouseup(e) {
-			spacePressed = false;
-        
-    }
-	document.getElementById("game").addEventListener("mousedown",mousedown, false);
-	document.getElementById("game").addEventListener("mouseup",mouseup, false);
-	document.getElementById("start").addEventListener("touchstart",mousedown, false);
-	document.getElementById("start").addEventListener("touchend",mouseup, false);
+	
+	document.getElementById("game").addEventListener("mousedown",keydown, false);
+	document.getElementById("game").addEventListener("mouseup",keyup, false);
+	document.getElementById("game").addEventListener("touchstart",keydown, false);
+	document.getElementById("game").addEventListener("touchend",keyup, false);
 	document.addEventListener('keydown', keydown, false);
 	document.addEventListener('keyup', keyup, false);
 

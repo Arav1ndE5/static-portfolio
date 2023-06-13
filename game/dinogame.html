@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VANILA JS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
     <h1>Dino Game</h1>
-    <div class="d-lg-flex align-items-center justify-content-center">
-            <canvas id="game" height="200" width="1000"></canvas>
-            <p class="controls">press <button id="start"> JUMP </button> to play this classic if you are free!</p><br>
+    <div class="container-fluid" height="100%" width="100%">
+            <canvas  id="game" height="200em" width="1000em"></canvas>
             <br>
-            <button class=""><a href="dinogame.html">Retry</a></button>
+            <p class="controls" id="clear">press anykey to play this classic if you are free!</p><br>
+            <br>
+            <a class="btn btn-primary" role="button" aria-pressed="true" href="dinogame.html">Retry</a>
           </div>
                 <script src="helpers.js"></script>
                 <script src="game-object.js"></script>
