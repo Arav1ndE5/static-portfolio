@@ -29,10 +29,10 @@
 	function Game(options) {
 		this.canvas = options.el;
 		this.context = this.canvas.getContext("2d");
-
+		this.OFFSET_SPEED = 100;
 		this.cacti = [];
 		this.nextCactus = 0;
-		this.offset = 0;
+		this.offset = 1;
 		this.lastTick = null;
 		this.running = false;
 		this.finished = false;
@@ -129,6 +129,7 @@
 
 	Game.prototype.step = function(timestamp) {
 		if (this.running && this.lastTick) {
+			this.OFFSET_SPEED += 5000;
 			this.offset += Math.min((timestamp - this.lastTick), MAX_TIME_TICK) * OFFSET_SPEED;
 
 			this.removeOldCacti();
@@ -148,7 +149,9 @@
 			this.lastTick = timestamp;
 			requestAnimationFrame(this.step.bind(this));
 		}
+	
 	};
 
+	
 	namespace.Game = Game;
 })(window);
