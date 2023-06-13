@@ -10,17 +10,23 @@
 
 	var spacePressed = false;
 	function keydown(e) {
-        if (e.keyCode === SPACE_BAR_CODE) {
 			spacePressed = true;
-        }
     }
 
     function keyup(e) {
-        if (e.keyCode === SPACE_BAR_CODE) {
 			spacePressed = false;
-        }
+        
+    }
+	function mousedown(e) {
+			spacePressed = true;
     }
 
+    function mouseup(e) {
+			spacePressed = false;
+        
+    }
+	document.getElementById("game").addEventListener("mousedown",mousedown, false);
+	document.getElementById("game").addEventListener("mouseup",mouseup, false);
 	document.addEventListener('keydown', keydown, false);
 	document.addEventListener('keyup', keyup, false);
 
