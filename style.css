@@ -990,6 +990,13 @@ tl-item.active .tl-dot:before {
     display: block;
     margin: 10px 0 0 0;
   }
+  .footer-text {
+    font-size: 14px;
+  }
+  .contact-info {
+    width:100%;
+  }
+
 }
 @media (max-width: 320px) {
   .animated-text {
