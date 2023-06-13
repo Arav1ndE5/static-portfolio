@@ -19,10 +19,10 @@
         
     }
 	
-	document.getElementById("game").addEventListener("mousedown",keydown, false);
-	document.getElementById("game").addEventListener("mouseup",keyup, false);
-	document.getElementById("game").addEventListener("touchstart",keydown, false);
-	document.getElementById("game").addEventListener("touchend",keyup, false);
+	document.getElementById("touch").addEventListener("mousedown",keydown, false);
+	document.getElementById("touch").addEventListener("mouseup",keyup, false);
+	document.getElementById("touch").addEventListener("touchstart",keydown, false);
+	document.getElementById("touch").addEventListener("touchend",keyup, false);
 	document.addEventListener('keydown', keydown, false);
 	document.addEventListener('keyup', keyup, false);
 
