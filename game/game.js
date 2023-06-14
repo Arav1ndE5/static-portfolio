@@ -20,6 +20,7 @@
     }
 	
 	document.getElementById("re").style.display = 'none';
+	document.getElementById("ba").style.display = 'none';
 	document.getElementById("touch").addEventListener("mousedown",keydown, false);
 	document.getElementById("touch").addEventListener("mouseup",keyup, false);
 	document.getElementById("touch").addEventListener("touchstart",keydown, false);
@@ -120,6 +121,7 @@
 				this.finished = true;
 				this.player.wideEyed = true;
 				document.getElementById("re").style.display = 'block';
+				document.getElementById("ba").style.display = 'block';
 				return;
 			}
 		}
