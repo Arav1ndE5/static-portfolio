@@ -7,21 +7,21 @@
     <title>VANILA JS</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
-<body  height="660px">
+<body >
+  <br>
     <h1 class="flex align-items-center justify-content-center" style="text-align: center;font-family:Impact;">GAME ARCADE</h1><br><br>
     <br><br>
     <div display="inline" class="container-fluid" height="100%" width="100%">
-            <canvas  id="game" height="200em" width="1000em"></canvas>
+            <canvas id="game" height="200em" width="1200em"></canvas>
             <br><br>
-            <p class="controls" id="clear" style="text-align: center;font-family:Impact;letter-spacing: 1.1px;">press anykey to play this classic if you are free!</p>
+            <p class="controls" id="clear" style="text-align: center;font-family:Impact;letter-spacing: 1.2px;">press anykey to play this classic if you are free!</p>
             <a class="btn btn-danger" style="display: none;border-radius: 900px;font-family:Impact;letter-spacing: 1.2px;" id="re" height="20em" width="100%" role="button" aria-pressed="true" href="dinogame.html">RETRY</a>
             <br>
     
             <div class="flex align-items-center justify-content-center"></div>
           </div>
           <div<div display="flex-column align-items-center justify-content-center" class="container-fluid" height="100%" width="100%">
-            <canvas id="touch" height="200em" width="350em" style="background: rgba(193, 190, 190, 0.545);border-radius: 900px;margin-left: 0px;">
-              </canvas>
+            <a id="touch" class="btn" style="display:block ;border-radius: 900px;font-family:Impact;letter-spacing: 1.2px;padding: 5em;background-color: rgba(194, 194, 194, 0.725);color: rgb(253, 253, 253);" height="20em" width="100%">JUMP</a>
           </div></div>
                 <script src="helpers.js"></script>
                 <script src="game-object.js"></script>
@@ -35,6 +35,19 @@
                     el: document.getElementById("game")
                   });
                 </script>
+                <script>
+                  function myFunction(x) {
+                    if (x.matches) { 
+                      document.getElementById('game').style.width = "70em";
+                    } else {
+                      document.getElementById('game').style.width = "100%";
+                    }
+                  }
+                  
+                  var x = window.matchMedia("(max-width: 700px)")
+                  myFunction(x)
+                  x.addListener(myFunction) 
+                  </script>
 
 
 </body>
