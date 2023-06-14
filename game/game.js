@@ -12,10 +12,13 @@
 	function keydown(e) {
 			spacePressed = true;
 			document.getElementById("clear").innerHTML="";
+			document.getElementById("touch").style.background = 'rgba(180, 180, 180, 1)';
+			document.getElementById("touch").innerText = '\n';
     }
 
     function keyup(e) {
 			spacePressed = false;
+			document.getElementById("touch").style.background = 'rgba(194, 194, 194, 0.725)';
         
     }
 	
@@ -122,6 +125,7 @@
 				this.player.wideEyed = true;
 				document.getElementById("re").style.display = 'block';
 				document.getElementById("ba").style.display = 'block';
+				document.getElementById("touch").style.display = 'none';
 				return;
 			}
 		}
