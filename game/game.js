@@ -19,6 +19,7 @@
         
     }
 	
+	document.getElementById("re").style.display = 'none';
 	document.getElementById("touch").addEventListener("mousedown",keydown, false);
 	document.getElementById("touch").addEventListener("mouseup",keyup, false);
 	document.getElementById("touch").addEventListener("touchstart",keydown, false);
@@ -118,9 +119,11 @@
 				this.running = false;
 				this.finished = true;
 				this.player.wideEyed = true;
+				document.getElementById("re").style.display = 'block';
 				return;
 			}
 		}
+			
 	};
 
 	Game.prototype.clear = function() {
