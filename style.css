@@ -886,6 +886,7 @@ tl-item.active .tl-dot:before {
   position: relative;
   bottom: -13px;
   width: 100%;
+  padding: 1.2em;
 }
 .dark-mode .contact-info{
   background: #0c0c0d;
