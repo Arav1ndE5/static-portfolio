@@ -26,6 +26,20 @@
         };
         
     })
+    $(function() {
+
+      var hour = (new Date).getHours();
+    
+      if (hour >= 18 || hour < 7) {
+        $('body').toggleClass('dark-mode')
+      } else {
+        $('body').removeClass('dark-mode');
+      }
+      console.log(hour);
+    
+    });
+
+
     //skill
     $(".skills").addClass("active")
     $(".skills .skill .skill-bar span").each(function() {
@@ -165,5 +179,7 @@ function animate() {
 }
 
 animate();
+
+
 
 
