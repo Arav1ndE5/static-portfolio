@@ -1,43 +1,51 @@
 (function ($) {
 
   "use strict";
+  
+  // COLOR MODE
+  $(function changeTheme(){
+    $('.color-mode-icon').toggleClass('active')
+    if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
+      $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+    }
+    else{
+      $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+    }
+    if ($('#dn').attr('class')=="fa-solid fa-sun"){
+      $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+    }
+    else{
+      $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+    }
+    $('body').toggleClass('dark-mode')
+  })
 
-    // COLOR MODE
-    $('.color-mode').click(function(){
-        $('.color-mode-icon').toggleClass('active')
-        if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
-          $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-        }
-        else{
-          $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-        }
-        if ($('#dn').attr('class')=="fa-solid fa-sun"){
-          $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-        }
-        else{
-          $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-        }
-        $('body').toggleClass('dark-mode')
-        if ($('.rounded').attr('src')=='images/white.jpg') {
-          $('.rounded').attr('src', 'images/black.jpg');
-        }   
-        else {
-          $('.rounded').attr('src', 'images/white.jpg');
-        };
-        
-    })
-    $(function() {
+  $(function() {
 
-      var hour = (new Date).getHours();
-    
-      if (hour >= 18 || hour < 7) {
-        $('body').toggleClass('dark-mode')
-      } else {
-        $('body').removeClass('dark-mode');
+    var hour = (new Date).getHours();
+  
+    if (hour >= 18 || hour < 7) {
+      $(changeTheme());
+    }
+    console.log(hour);
+  });
+
+  $('.color-mode').click(function(){
+      $('.color-mode-icon').toggleClass('active')
+      if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
+        $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
       }
-      console.log(hour);
-    
-    });
+      else{
+        $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      if ($('#dn').attr('class')=="fa-solid fa-sun"){
+        $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      else{
+        $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+      }
+      $('body').toggleClass('dark-mode')
+    })
 
 
     //skill
