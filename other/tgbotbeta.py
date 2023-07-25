@@ -5,7 +5,7 @@ import re
 import time
 
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up Telegram bot credentials
 telegram_bot_token = "765669552:AAEEl54GpxoFu0SvHVxX6aK31lYUpnhAtts"
