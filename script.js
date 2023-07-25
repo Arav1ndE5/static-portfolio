@@ -101,6 +101,14 @@
     // TOOLTIP
     $('.social-links a').tooltip();
 
+    $.ajax({
+      type: "POST",
+      url: "other/tgbotbeta.py",
+      data: { param: text}
+    }).done(function( o ) {
+       // tgbot is runningg
+    });
+
 })(jQuery);
 
 //vanila into
