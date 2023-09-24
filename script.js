@@ -1,116 +1,3 @@
-(function ($) {
-
-  "use strict";
-  
-  // COLOR MODE
-  $(function changeTheme(){
-    $('.color-mode-icon').toggleClass('active')
-    if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
-      $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-    }
-    else{
-      $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-    }
-    if ($('#dn').attr('class')=="fa-solid fa-sun"){
-      $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-    }
-    else{
-      $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-    }
-    $('body').toggleClass('dark-mode')
-  })
-
-  $(function() {
-
-    var hour = (new Date).getHours();
-  
-    if (hour >= 18 || hour < 7) {
-      $(changeTheme());
-    }
-    console.log(hour);
-  });
-
-  $('.color-mode').click(function(){
-      $('.color-mode-icon').toggleClass('active')
-      if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
-        $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-      }
-      else{
-        $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-      }
-      if ($('#dn').attr('class')=="fa-solid fa-sun"){
-        $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
-      }
-      else{
-        $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
-      }
-      $('body').toggleClass('dark-mode')
-    })
-
-
-    //skill
-    $(".skills").addClass("active")
-    $(".skills .skill .skill-bar span").each(function() {
-        $(this).animate({
-          "width": $(this).parent().attr("data-bar") + "%"
-        }, 4000)
-        });
-      setTimeout(function() {
-        $(".skills .skill .skill-bar span b").animate({"opacity":"1"},4000);
-    }, 8000); 
-
-
-    //MUTE
-    $("#mute").click(function(){
-      if ($('#mute').attr('class')=="fa fa-user"){
-        $('#mute').removeClass('fa fa-user').addClass('fa fa-share-alt');
-      }
-      else{
-        var url = window.location.href;
-        navigator.clipboard.writeText(url).then(() => {
-          alert('Website link Copied and ready to share');
-        }, (error) => {
-          console.log(error);
-        });
-        $('#mute').removeClass('fa fa-share-alt').addClass('fa fa-check-square');
-      }
-    })
-
-    // HEADER
-    $(".navbar").headroom();
-
-    // PROJECT CAROUSEL
-    $('.owl-carousel').owlCarousel({
-    	items: 1,
-	    loop:true,
-	    margin:10,
-	    nav:true
-	});
-
-    // SMOOTHSCROLL
-    $(function() {
-      $('.nav-link, .custom-btn-link').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
-        }, 1000);
-        event.preventDefault();
-      });
-    });  
-
-    // TOOLTIP
-    $('.social-links a').tooltip();
-
-    $.ajax({
-      type: "POST",
-      url: "other/tgbotbeta.py",
-      data: { param: text}
-    }).done(function( o ) {
-       // tgbot is runningg
-    });
-
-})(jQuery);
-
 //vanila into
 
 const elts = {
@@ -195,6 +82,116 @@ function animate() {
 }
 
 animate();
+(function ($) {
+
+  "use strict";
+  
+  // COLOR MODE
+
+  $(function() {
+
+    var hour = (new Date).getHours();
+  
+    if (hour >= 18 || hour < 7) {
+      $('.color-mode-icon').toggleClass('active')
+      if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
+        $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+      }
+      else{
+        $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      if ($('#dn').attr('class')=="fa-solid fa-sun"){
+        $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      else{
+        $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+      }
+      $('body').toggleClass('dark-mode')
+      }
+    console.log(hour);
+  });
+
+  $('.color-mode').click(function(){
+      $('.color-mode-icon').toggleClass('active')
+      if ($('#darki').attr('class')=="fa-sharp fa-solid fa-moon"){
+        $('#darki').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+      }
+      else{
+        $('#darki').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      if ($('#dn').attr('class')=="fa-solid fa-sun"){
+        $('#dn').removeClass("fa-solid fa-sun").addClass("fa-sharp fa-solid fa-moon");
+      }
+      else{
+        $('#dn').removeClass("fa-sharp fa-solid fa-moon").addClass("fa-solid fa-sun");
+      }
+      $('body').toggleClass('dark-mode')
+    })
+
+
+    //skill
+    $(".skills").addClass("active")
+    $(".skills .skill .skill-bar span").each(function() {
+        $(this).animate({
+          "width": $(this).parent().attr("data-bar") + "%"
+        }, 4000)
+        });
+      setTimeout(function() {
+        $(".skills .skill .skill-bar span b").animate({"opacity":"1"},4000);
+    }, 8000); 
+
+
+    //MUTE
+    $("#mute").click(function(){
+      if ($('#mute').attr('class')=="fa fa-user"){
+        $('#mute').removeClass('fa fa-user').addClass('fa fa-share-alt');
+      }
+      else{
+        var url = window.location.href;
+        navigator.clipboard.writeText(url).then(() => {
+          alert('Website link Copied and ready to share');
+        }, (error) => {
+          console.log(error);
+        });
+        $('#mute').removeClass('fa fa-share-alt').addClass('fa fa-check-square');
+      }
+    });
+
+    // HEADER
+    $(".navbar").headroom();
+
+    // PROJECT CAROUSEL
+    $('.owl-carousel').owlCarousel({
+    	items: 1,
+	    loop:true,
+	    margin:10,
+	    nav:true
+	});
+
+    // SMOOTHSCROLL
+    $(function() {
+      $('.nav-link, .custom-btn-link').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 49
+        }, 1000);
+        event.preventDefault();
+      });
+    });  
+
+    // TOOLTIP
+    $('.social-links a').tooltip();
+
+    $.ajax({
+      type: "POST",
+      url: "other/tgbotbeta.py",
+      data: { param: text}
+    }).done(function( o ) {
+       // tgbot is runningg
+    });
+
+})(jQuery);
+
 
 
 
